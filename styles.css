@@ -1120,19 +1120,24 @@ body.reduce-motion .ticker__inner { animation: none; }
   .about__photo-frame { max-width: 320px; }
   .about__bio { font-size: clamp(1rem, 3vw, 1.3rem); }
   .about__detail-item { padding-left: 1rem; }
-  .work__track {
-    display: flex;
-    flex-direction: row;
+  .work {
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
+    overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     -ms-overflow-style: none;
   }
-  .work__track::-webkit-scrollbar { display: none; }
+  .work::-webkit-scrollbar { display: none; }
+  .work__track {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: max-content;
+    scroll-snap-type: x mandatory;
+  }
   .work__panel {
     width: 85vw;
-    min-height: 100vh;
+    min-height: 80vh;
     scroll-snap-align: start;
     flex-shrink: 0;
   }

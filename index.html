@@ -140,7 +140,14 @@
     <!-- 02. WORK / CASE STUDIES (horizontal scroll) -->
     <section class="work" id="work">
       <div class="swipe-hint">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-4-8c0 1.1.9 2 2 2h4c1.1 0 2-.9 2-2s-.9-2-2-2h-4c-1.1 0-2 .9-2 2z"/></svg>
+        <span class="swipe-hint__text">SWIPE</span>
+        <svg class="swipe-hint__icon" viewBox="0 0 48 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 12h36M40 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="10" cy="12" r="3" fill="currentColor" opacity="0.5">
+            <animate attributeName="cx" values="10;24;10" dur="1.8s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0.5;1;0.5" dur="1.8s" repeatCount="indefinite"/>
+          </circle>
+        </svg>
       </div>
       <div class="work__track" data-horizontal-scroll>
         <div class="work__panel work__panel--intro">
