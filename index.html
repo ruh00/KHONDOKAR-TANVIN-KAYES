@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khondokar Tanvin Kayes — Educator. Speaker. Leader.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-cursor="default">
+
+  <!-- LOADING SEQUENCE -->
+  <div id="loader" class="loader">
+    <div class="loader__bar"></div>
+    <span class="loader__text">KTK</span>
+  </div>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor" id="cursor"><div class="cursor__dot"></div></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- MOUSE SPOTLIGHT -->
+  <div class="spotlight" id="spotlight"></div>
+
+  <!-- REDUCE MOTION TOGGLE -->
+  <button class="motion-toggle" id="motionToggle" aria-label="Toggle reduced motion">
+    <span class="motion-toggle__label">MOTION: ON</span>
+  </button>
+
+  <!-- PAGE WIPE OVERLAY -->
+  <div class="page-wipe" id="pageWipe"></div>
+
+  <!-- HEADER / NAV -->
+  <header class="header" id="header">
+    <a href="#hero" class="header__logo" data-cursor-hover="link">KTK</a>
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li><a href="#about" class="header__link" data-cursor-hover="link">About</a></li>
+        <li><a href="#work" class="header__link" data-cursor-hover="link">Work</a></li>
+        <li><a href="#cocurricular" class="header__link" data-cursor-hover="link">Leadership</a></li>
+        <li><a href="#manifesto" class="header__link" data-cursor-hover="link">Manifesto</a></li>
+        <li><a href="#now" class="header__link" data-cursor-hover="link">/Now</a></li>
+        <li><a href="#changelog" class="header__link" data-cursor-hover="link">Changelog</a></li>
+        <li><a href="#contact" class="header__link header__link--cta" data-cursor-hover="link">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="header__burger" id="burgerBtn" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- MOBILE MENU OVERLAY -->
+  <div class="mobile-menu" id="mobileMenu">
+    <nav class="mobile-menu__nav">
+      <a href="#about" class="mobile-menu__link" data-mobile-link>About</a>
+      <a href="#work" class="mobile-menu__link" data-mobile-link>Work</a>
+      <a href="#cocurricular" class="mobile-menu__link" data-mobile-link>Leadership</a>
+      <a href="#education" class="mobile-menu__link" data-mobile-link>Education</a>
+      <a href="#skills" class="mobile-menu__link" data-mobile-link>Skills</a>
+      <a href="#manifesto" class="mobile-menu__link" data-mobile-link>Manifesto</a>
+      <a href="#now" class="mobile-menu__link" data-mobile-link>/Now</a>
+      <a href="#references" class="mobile-menu__link" data-mobile-link>References</a>
+      <a href="#contact" class="mobile-menu__link mobile-menu__link--accent" data-mobile-link>Contact</a>
+    </nav>
+  </div>
+
+  <main id="smooth-wrapper">
+
+    <!-- 01. HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__venetian"></div>
+      <div class="hero__content">
+        <h1 class="hero__title">
+          <span class="hero__line" data-scramble>KHONDOKAR</span>
+          <span class="hero__line hero__line--accent" data-scramble>TANVIN</span>
+          <span class="hero__line" data-scramble>KAYES</span>
+        </h1>
+        <p class="hero__sub" data-reveal>Educator &middot; Speaker &middot; Leader &middot; Creator</p>
+      </div>
+      <div class="hero__scroll-cue" data-reveal>
+        <span>SCROLL</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- 08. ABOUT (split-screen off-grid) -->
+    <section class="about" id="about">
+      <div class="about__grid">
+        <div class="about__image-col">
+          <div class="about__photo-frame" data-parallax>
+            <div class="about__photo-placeholder">KTK</div>
+          </div>
+        </div>
+        <div class="about__text-col">
+          <h2 class="section-label" data-reveal>ABOUT</h2>
+          <p class="about__bio" data-reveal>
+            Enthusiastic and goal-oriented educator with deep roots in public speaking,
+            creative communication, and youth leadership. Experienced in instruction,
+            graphic design, and media — driven by a belief that education is the most
+            powerful tool for transformation.
+          </p>
+          <p class="about__bio about__bio--secondary" data-reveal>
+            I have experience in graphic design, MS Office, instruction, and teamwork,
+            along with strong communication and leadership abilities. I aim to contribute
+            my creativity, problem-solving skills, and positive attitude to an organization
+            where I can grow and add value.
+          </p>
+          <div class="about__details" data-reveal>
+            <div class="about__detail-item">
+              <span class="about__detail-label">FULL NAME</span>
+              <span class="about__detail-value">Khondokar Tanvin Kayes</span>
+            </div>
+            <div class="about__detail-item">
+              <span class="about__detail-label">LOCATION</span>
+              <span class="about__detail-value">CU 2 no. gate, Chittagong University campus, Hathazari, Chattogram</span>
+            </div>
+            <div class="about__detail-item">
+              <span class="about__detail-label">EMAIL</span>
+              <span class="about__detail-value"><a href="mailto:Xtanvinkayes@gmail.com" data-cursor-hover="link">Xtanvinkayes@gmail.com</a></span>
+            </div>
+            <div class="about__detail-item">
+              <span class="about__detail-label">PHONE</span>
+              <span class="about__detail-value"><a href="tel:+8801829019858" data-cursor-hover="link">+880 18290 19858</a></span>
+            </div>
+            <div class="about__detail-item">
+              <span class="about__detail-label">LINKEDIN</span>
+              <span class="about__detail-value"><a href="https://linkedin.com/in/khondokar-tanvin-kayes" target="_blank" rel="noopener" data-cursor-hover="link">in/khondokar-tanvin-kayes ↗</a></span>
+            </div>
+            <div class="about__detail-item">
+              <span class="about__detail-label">LANGUAGES</span>
+              <span class="about__detail-value">Bengali (Native) &middot; English (Fluent)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02. WORK / CASE STUDIES (horizontal scroll) -->
+    <section class="work" id="work">
+      <div class="swipe-hint">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-4-8c0 1.1.9 2 2 2h4c1.1 0 2-.9 2-2s-.9-2-2-2h-4c-1.1 0-2 .9-2 2z"/></svg>
+      </div>
+      <div class="work__track" data-horizontal-scroll>
+        <div class="work__panel work__panel--intro">
+          <h2 class="section-label section-label--huge" data-reveal>WORK</h2>
+        </div>
+        <div class="work__panel" data-panel>
+          <div class="work__panel-inner">
+            <span class="work__number" data-counter>01</span>
+            <h3 class="work__role" data-reveal>Instructor</h3>
+            <p class="work__org" data-reveal>Falcon Professional Academy &middot; 2024 – Present</p>
+            <p class="work__desc" data-reveal>Developing comprehensive instructional strategies. Delivering high-quality teaching and motivation to students across disciplines.</p>
+          </div>
+        </div>
+        <div class="work__panel" data-panel>
+          <div class="work__panel-inner">
+            <span class="work__number" data-counter>02</span>
+            <h3 class="work__role" data-reveal>Intern Teacher</h3>
+            <p class="work__org" data-reveal>CU Laboratory School &amp; College &middot; Feb–May 2026</p>
+            <p class="work__desc" data-reveal>Delivered curriculum-aligned lessons. Coordinated academic and cultural programs. Built professional relationships with students and faculty.</p>
+          </div>
+        </div>
+        <div class="work__panel" data-panel>
+          <div class="work__panel-inner">
+            <span class="work__number" data-counter>03</span>
+            <h3 class="work__role" data-reveal>Special Correspondent</h3>
+            <p class="work__org" data-reveal>Morning Post &middot; Nov 2024 – Nov 2025</p>
+            <p class="work__desc" data-reveal>Covered social, political, and current affairs through field reporting, interviews, and research. Delivered accurate, timely stories from diverse communities.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION (detailed) -->
+    <section class="education" id="education">
+      <h2 class="section-label" data-reveal>EDUCATION</h2>
+      <div class="education__timeline">
+        <div class="education__item" data-reveal>
+          <span class="education__year">2025</span>
+          <div class="education__content">
+            <h3 class="education__degree">Bachelor of Education (Honours)</h3>
+            <p class="education__school">Institute of Education and Research (IER), University of Chittagong</p>
+            <p class="education__note">Appeared</p>
+          </div>
+        </div>
+        <div class="education__item" data-reveal>
+          <span class="education__year">2021</span>
+          <div class="education__content">
+            <h3 class="education__degree">Higher Secondary Certificate (HSC) — Science</h3>
+            <p class="education__school">BAF Shaheen College, Dhaka</p>
+            <p class="education__gpa">GPA: 5.00 / 5.00</p>
+          </div>
+        </div>
+        <div class="education__item" data-reveal>
+          <span class="education__year">2019</span>
+          <div class="education__content">
+            <h3 class="education__degree">Secondary School Certificate (SSC) — Science</h3>
+            <p class="education__school">Adamjee Cantonment Public School, Dhaka</p>
+            <p class="education__gpa">GPA: 5.00 / 5.00</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS (full breakdown) -->
+    <section class="skills" id="skills">
+      <h2 class="section-label" data-reveal>SKILLS</h2>
+      <div class="skills__grid">
+        <div class="skills__category" data-reveal>
+          <h3 class="skills__cat-title">Core Competencies</h3>
+          <ul class="skills__list">
+            <li>Creative Thinking</li>
+            <li>Education Research &amp; Analysis</li>
+            <li>Media &amp; Communication</li>
+            <li>Teaching &amp; Training</li>
+          </ul>
+        </div>
+        <div class="skills__category" data-reveal>
+          <h3 class="skills__cat-title">Technical</h3>
+          <ul class="skills__list">
+            <li>MS Word — Expert</li>
+            <li>MS Excel — Expert</li>
+            <li>MS PowerPoint — Expert</li>
+            <li>Internet Research — Expert</li>
+            <li>Adobe Photoshop — Basic</li>
+            <li>Adobe Illustrator — Basic</li>
+          </ul>
+          <p class="skills__note">Design training from Rapid Computer Training Centre</p>
+        </div>
+        <div class="skills__category" data-reveal>
+          <h3 class="skills__cat-title">Professional Soft Skills</h3>
+          <ul class="skills__list">
+            <li>Excellent Communication</li>
+            <li>Leadership Ability</li>
+            <li>Fast Learning</li>
+            <li>Problem-Solving</li>
+            <li>Public Speaking</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CO-CURRICULAR (staggered reveal list) -->
+    <section class="cocurricular" id="cocurricular">
+      <h2 class="section-label" data-reveal>LEADERSHIP</h2>
+      <ul class="cocurricular__list">
+        <li class="cocurricular__item" data-reveal-stagger>
+          <span class="cocurricular__role">Founder &amp; President</span>
+          <span class="cocurricular__org">Adamjee School Environment Club</span>
+        </li>
+        <li class="cocurricular__item" data-reveal-stagger>
+          <span class="cocurricular__role">Co-Founder &amp; General Secretary</span>
+          <span class="cocurricular__org">Bangladesh Youth Development Club</span>
+        </li>
+        <li class="cocurricular__item" data-reveal-stagger>
+          <span class="cocurricular__role">Former President</span>
+          <span class="cocurricular__org">BAF Shaheen College Dhaka Green Thumbs</span>
+        </li>
+        <li class="cocurricular__item" data-reveal-stagger>
+          <span class="cocurricular__role">Advisor</span>
+          <span class="cocurricular__org">Red Love Society</span>
+        </li>
+        <li class="cocurricular__item" data-reveal-stagger>
+          <span class="cocurricular__role">Vice President (Admin)</span>
+          <span class="cocurricular__org">Chittagong University School of Debate</span>
+        </li>
+        <li class="cocurricular__item" data-reveal-stagger>
+          <span class="cocurricular__role">Former General Secretary</span>
+          <span class="cocurricular__org">Ekla Cholo Re, CU</span>
+        </li>
+        <li class="cocurricular__item" data-reveal-stagger>
+          <span class="cocurricular__role">General Secretary</span>
+          <span class="cocurricular__org">IER Debating Club, CU</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- STATS COUNTERS -->
+    <section class="stats" id="stats">
+      <div class="stats__grid">
+        <div class="stats__item" data-reveal>
+          <span class="stats__number" data-count-to="7">0</span>
+          <span class="stats__label">Leadership Roles</span>
+        </div>
+        <div class="stats__item" data-reveal>
+          <span class="stats__number" data-count-to="3">0</span>
+          <span class="stats__label">Professional Positions</span>
+        </div>
+        <div class="stats__item" data-reveal>
+          <span class="stats__number" data-count-to="2">0</span>
+          <span class="stats__label">Languages Fluent</span>
+        </div>
+        <div class="stats__item" data-reveal>
+          <span class="stats__number" data-count-to="5">0</span>
+          <span class="stats__label">GPA Achieved (HSC &amp; SSC)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03. PROCESS / MANIFESTO -->
+    <section class="manifesto" id="manifesto">
+      <h2 class="section-label" data-reveal>MANIFESTO</h2>
+      <ol class="manifesto__list">
+        <li class="manifesto__item" data-reveal>
+          <span class="manifesto__num">01</span>
+          <p class="manifesto__text">Education is not transmission — it is ignition. Every lesson must spark something that outlasts the classroom.</p>
+        </li>
+        <li class="manifesto__item" data-reveal>
+          <span class="manifesto__num">02</span>
+          <p class="manifesto__text">Communication without empathy is noise. Listen first, speak second, write third.</p>
+        </li>
+        <li class="manifesto__item" data-reveal>
+          <span class="manifesto__num">03</span>
+          <p class="manifesto__text">Leadership is service disguised as authority. The title means nothing if the people don't grow.</p>
+        </li>
+        <li class="manifesto__item" data-reveal>
+          <span class="manifesto__num">04</span>
+          <p class="manifesto__text">Creativity is discipline wearing a different mask. Constraints are not enemies — they are the brief.</p>
+        </li>
+        <li class="manifesto__item" data-reveal>
+          <span class="manifesto__num">05</span>
+          <p class="manifesto__text">Show up before you're ready. The gap between preparation and action is where real learning lives.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- 07. AWARDS TICKER -->
+    <section class="ticker-section" id="awards">
+      <div class="ticker" data-ticker>
+        <div class="ticker__inner">
+          <span>GPA 5.00/5.00 HSC ★</span>
+          <span>GPA 5.00/5.00 SSC ★</span>
+          <span>B.Ed Honours — IER, CU ★</span>
+          <span>Founder — Adamjee Environment Club ★</span>
+          <span>Co-Founder — BYDC ★</span>
+          <span>VP Admin — CUSD ★</span>
+          <span>GS — IER Debating Club ★</span>
+          <span>Special Correspondent — Morning Post ★</span>
+          <span>Instructor — Falcon Academy ★</span>
+          <span>GPA 5.00/5.00 HSC ★</span>
+          <span>GPA 5.00/5.00 SSC ★</span>
+          <span>B.Ed Honours — IER, CU ★</span>
+          <span>Founder — Adamjee Environment Club ★</span>
+          <span>Co-Founder — BYDC ★</span>
+          <span>VP Admin — CUSD ★</span>
+          <span>GS — IER Debating Club ★</span>
+          <span>Special Correspondent — Morning Post ★</span>
+          <span>Instructor — Falcon Academy ★</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06. /NOW PAGE -->
+    <section class="now" id="now">
+      <div class="now__content">
+        <h2 class="section-label" data-reveal>/NOW</h2>
+        <p class="now__date" data-reveal>Updated May 2026</p>
+        <div class="now__items">
+          <div class="now__item" data-reveal>
+            <h3 class="now__item-title">Teaching</h3>
+            <p class="now__item-desc">Completing internship at CU Laboratory School &amp; College. Refining pedagogy through direct classroom experience.</p>
+          </div>
+          <div class="now__item" data-reveal>
+            <h3 class="now__item-title">Building</h3>
+            <p class="now__item-desc">Continuing as Instructor at Falcon Professional Academy while developing new instructional frameworks.</p>
+          </div>
+          <div class="now__item" data-reveal>
+            <h3 class="now__item-title">Creating</h3>
+            <p class="now__item-desc">Exploring the intersection of education, media, and design. This portfolio is part of that exploration.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05. CHANGELOG -->
+    <section class="changelog" id="changelog">
+      <h2 class="section-label" data-reveal>CHANGELOG</h2>
+      <div class="changelog__entries">
+        <div class="changelog__entry" data-reveal>
+          <span class="changelog__version">v1.0.0</span>
+          <span class="changelog__date">May 2026</span>
+          <p class="changelog__desc">Initial release. Film noir aesthetic. Desert sun palette. Horizontal work scroll. Kinetic hero. Custom cursor system. Lenis smooth scroll.</p>
+        </div>
+        <div class="changelog__entry changelog__entry--future" data-reveal>
+          <span class="changelog__version">v1.1.0</span>
+          <span class="changelog__date">Planned</span>
+          <p class="changelog__desc">Case study deep-dives with project imagery. Expanded /now page. Print-friendly stylesheet.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- REFERENCES -->
+    <section class="references" id="references">
+      <h2 class="section-label" data-reveal>REFERENCES</h2>
+      <div class="references__grid">
+        <div class="references__card" data-reveal>
+          <h3 class="references__name">Syed Fayzul Hasan</h3>
+          <p class="references__title">Managing Director, Tex-Trims &amp; Packaging Ltd</p>
+          <a href="mailto:fayzultextrims@gmail.com" class="references__contact" data-cursor-hover="link">fayzultextrims@gmail.com</a>
+          <a href="tel:+8801716192241" class="references__contact" data-cursor-hover="link">+88 01716 192241</a>
+        </div>
+        <div class="references__card" data-reveal>
+          <h3 class="references__name">Syed Rabiul Islam</h3>
+          <p class="references__title">Senior Manager, Finance &amp; Accounts, Aarong</p>
+          <a href="mailto:rabiul.islam2@gmail.com" class="references__contact" data-cursor-hover="link">rabiul.islam2@gmail.com</a>
+          <a href="tel:+8801713555536" class="references__contact" data-cursor-hover="link">+88 017135 55536</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04. CONTACT (giant mailto footer) -->
+    <footer class="contact" id="contact">
+      <div class="contact__inner">
+        <p class="contact__cta-label" data-reveal>SAY HELLO</p>
+        <a href="mailto:Xtanvinkayes@gmail.com" class="contact__email" data-cursor-hover="link" data-reveal>
+          Xtanvinkayes@gmail.com
+        </a>
+        <div class="contact__meta" data-reveal>
+          <a href="tel:+8801829019858" data-cursor-hover="link">+880 18290 19858</a>
+          <a href="https://linkedin.com/in/khondokar-tanvin-kayes" target="_blank" rel="noopener" data-cursor-hover="link">LinkedIn ↗</a>
+        </div>
+        <div class="contact__address" data-reveal>
+          <p>CU 2 no. gate, Chittagong University campus</p>
+          <p>Hathazari, Chattogram, Bangladesh</p>
+        </div>
+        <p class="contact__copy">&copy; 2026 Khondokar Tanvin Kayes. All rights reserved.</p>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
