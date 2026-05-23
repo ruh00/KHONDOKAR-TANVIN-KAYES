@@ -202,6 +202,11 @@
     }
     if (workSection) workSection.classList.remove('is-static');
 
+    if (window.innerWidth < 769) {
+      initSwipeHint();
+      return;
+    }
+
     gsap.registerPlugin(ScrollTrigger);
 
     const panels = $$('.work__panel', track);
@@ -219,6 +224,44 @@
         invalidateOnRefresh: true,
       },
     });
+  }
+
+  function initSwipeHint() {
+    const hint = $('.swipe-hint');
+    const workSection = $('.work');
+    if (!hint || !workSection) return;
+
+    let hasInteracted = false;
+    hint.style.display = 'none';
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (hasInteracted) return;
+          if (entry.isIntersecting) {
+            hint.style.display = 'flex';
+            hint.classList.remove('is-hidden');
+          } else {
+            hint.classList.add('is-hidden');
+            setTimeout(() => {
+              if (!entry.isIntersecting && !hasInteracted) hint.style.display = 'none';
+            }, 500);
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    observer.observe(workSection);
+
+    const hideHint = () => {
+      hasInteracted = true;
+      hint.classList.add('is-hidden');
+      setTimeout(() => { hint.style.display = 'none'; }, 500);
+    };
+
+    workSection.addEventListener('touchstart', hideHint, { once: true });
+    workSection.addEventListener('scroll', hideHint, { once: true });
   }
 
   // ─── NUMBER COUNTERS ───
@@ -347,6 +390,27 @@
     });
   }
 
+  // ─── LEADERSHIP TOGGLE ───
+  function initLeadershipToggle() {
+    const toggle = $('#leadershipToggle');
+    if (!toggle) return;
+    const hiddenItems = $$('.cocurricular__item--hidden');
+    toggle.addEventListener('click', () => {
+      const isExpanded = toggle.classList.toggle('is-expanded');
+      toggle.setAttribute('aria-expanded', isExpanded);
+      $('.cocurricular__toggle-text', toggle).textContent = isExpanded ? 'See Less' : 'See More';
+      hiddenItems.forEach((item, i) => {
+        if (isExpanded) {
+          item.style.display = 'flex';
+          setTimeout(() => item.classList.add('is-visible'), i * 80);
+        } else {
+          item.classList.remove('is-visible');
+          item.style.display = 'none';
+        }
+      });
+    });
+  }
+
   // ─── MOBILE MENU ───
   function initMobileMenu() {
     const burger = $('#burgerBtn');
@@ -416,6 +480,7 @@
     initMotionToggle();
     initPageWipe();
     initParallax();
+    initLeadershipToggle();
     initMobileMenu();
     initAnchorScroll();
     initHeaderScroll();
